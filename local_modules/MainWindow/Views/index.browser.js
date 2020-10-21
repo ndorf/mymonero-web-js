@@ -66,7 +66,7 @@ window.BootApp = function()
 	require('../../mymonero_libapp_js/libapp_js/MyMoneroLibAppBridge')({}).then(function(coreBridge_instance) // we can just use this directly in the browser version
 	{
 		const context = require('../Models/index_context.browser').NewHydratedContext({
-			nettype: require('../../mymonero_libapp_js/mymonero-core-js/cryptonote_utils/nettype').network_type.MAINNET, // critical setting
+			nettype: require('../../mymonero_libapp_js/mymonero-core-js/cryptonote_utils/nettype').network_type.STAGENET, // critical setting
 			app: app,
 			isDebug: isDebug,
 			isLiteApp: true, // used sparingly for to disable (but not redact) functionality
